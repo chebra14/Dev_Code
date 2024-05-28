@@ -1,0 +1,35 @@
+[0.500s] Invoking command in '/home/brandon/ros2_ws/src/breandon': PYTHONPATH=/home/brandon/ros2_ws/build/breandon/prefix_override:/home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/breandon build --build-base /home/brandon/ros2_ws/build/breandon/build install --record /home/brandon/ros2_ws/build/breandon/install.log --single-version-externally-managed
+[0.672s] running egg_info
+[0.672s] creating ../../build/breandon/breandon.egg-info
+[0.673s] writing ../../build/breandon/breandon.egg-info/PKG-INFO
+[0.673s] writing dependency_links to ../../build/breandon/breandon.egg-info/dependency_links.txt
+[0.673s] writing entry points to ../../build/breandon/breandon.egg-info/entry_points.txt
+[0.673s] writing requirements to ../../build/breandon/breandon.egg-info/requires.txt
+[0.673s] writing top-level names to ../../build/breandon/breandon.egg-info/top_level.txt
+[0.673s] writing manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+[0.674s] reading manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+[0.674s] writing manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+[0.674s] running build
+[0.675s] running build_py
+[0.675s] creating /home/brandon/ros2_ws/build/breandon/build
+[0.675s] creating /home/brandon/ros2_ws/build/breandon/build/lib
+[0.675s] creating /home/brandon/ros2_ws/build/breandon/build/lib/breandon
+[0.675s] copying breandon/__init__.py -> /home/brandon/ros2_ws/build/breandon/build/lib/breandon
+[0.675s] running install
+[0.675s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.675s]   warnings.warn(
+[0.675s] running install_lib
+[0.676s] creating /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon
+[0.676s] copying /home/brandon/ros2_ws/build/breandon/build/lib/breandon/__init__.py -> /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon
+[0.676s] byte-compiling /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon/__init__.py to __init__.cpython-310.pyc
+[0.676s] running install_data
+[0.676s] creating /home/brandon/ros2_ws/install/breandon/share/ament_index
+[0.677s] creating /home/brandon/ros2_ws/install/breandon/share/ament_index/resource_index
+[0.677s] creating /home/brandon/ros2_ws/install/breandon/share/ament_index/resource_index/packages
+[0.677s] copying resource/breandon -> /home/brandon/ros2_ws/install/breandon/share/ament_index/resource_index/packages
+[0.677s] copying package.xml -> /home/brandon/ros2_ws/install/breandon/share/breandon
+[0.677s] running install_egg_info
+[0.678s] Copying ../../build/breandon/breandon.egg-info to /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon-0.0.0-py3.10.egg-info
+[0.678s] running install_scripts
+[0.692s] writing list of installed files to '/home/brandon/ros2_ws/build/breandon/install.log'
+[0.706s] Invoked command in '/home/brandon/ros2_ws/src/breandon' returned '0': PYTHONPATH=/home/brandon/ros2_ws/build/breandon/prefix_override:/home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/breandon build --build-base /home/brandon/ros2_ws/build/breandon/build install --record /home/brandon/ros2_ws/build/breandon/install.log --single-version-externally-managed

@@ -1,0 +1,22 @@
+[43.648s] Invoking command in '/home/jetson/breandon/ros2_ws/src/breandon': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/breandon build --build-base /home/jetson/breandon/ros2_ws/build/breandon/build install --record /home/jetson/breandon/ros2_ws/build/breandon/install.log --single-version-externally-managed
+[49.709s] running egg_info
+[49.710s] writing ../../build/breandon/breandon.egg-info/PKG-INFO
+[49.711s] writing dependency_links to ../../build/breandon/breandon.egg-info/dependency_links.txt
+[49.713s] writing entry points to ../../build/breandon/breandon.egg-info/entry_points.txt
+[49.716s] writing requirements to ../../build/breandon/breandon.egg-info/requires.txt
+[49.716s] writing top-level names to ../../build/breandon/breandon.egg-info/top_level.txt
+[50.368s] reading manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+[50.512s] writing manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+[50.513s] running build
+[50.513s] running build_py
+[50.516s] running install
+[50.528s] running install_lib
+[50.841s] running install_data
+[50.843s] running install_egg_info
+[50.860s] removing '/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages/breandon-0.0.0-py3.8.egg-info' (and everything under it)
+[50.862s] Copying ../../build/breandon/breandon.egg-info to /home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages/breandon-0.0.0-py3.8.egg-info
+[51.009s] running install_scripts
+[51.151s] Installing Moving_forward script to /home/jetson/breandon/ros2_ws/install/breandon/lib/breandon
+[51.292s] Installing Opt_Moving_forward script to /home/jetson/breandon/ros2_ws/install/breandon/lib/breandon
+[51.294s] writing list of installed files to '/home/jetson/breandon/ros2_ws/build/breandon/install.log'
+[51.410s] Invoked command in '/home/jetson/breandon/ros2_ws/src/breandon' returned '0': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/breandon build --build-base /home/jetson/breandon/ros2_ws/build/breandon/build install --record /home/jetson/breandon/ros2_ws/build/breandon/install.log --single-version-externally-managed

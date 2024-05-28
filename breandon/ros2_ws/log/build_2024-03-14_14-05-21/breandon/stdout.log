@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/breandon/breandon.egg-info
+writing ../../build/breandon/breandon.egg-info/PKG-INFO
+writing dependency_links to ../../build/breandon/breandon.egg-info/dependency_links.txt
+writing entry points to ../../build/breandon/breandon.egg-info/entry_points.txt
+writing requirements to ../../build/breandon/breandon.egg-info/requires.txt
+writing top-level names to ../../build/breandon/breandon.egg-info/top_level.txt
+writing manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+reading manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+writing manifest file '../../build/breandon/breandon.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/brandon/ros2_ws/build/breandon/build
+creating /home/brandon/ros2_ws/build/breandon/build/lib
+creating /home/brandon/ros2_ws/build/breandon/build/lib/breandon
+copying breandon/__init__.py -> /home/brandon/ros2_ws/build/breandon/build/lib/breandon
+running install
+running install_lib
+creating /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon
+copying /home/brandon/ros2_ws/build/breandon/build/lib/breandon/__init__.py -> /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon
+byte-compiling /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/brandon/ros2_ws/install/breandon/share/ament_index
+creating /home/brandon/ros2_ws/install/breandon/share/ament_index/resource_index
+creating /home/brandon/ros2_ws/install/breandon/share/ament_index/resource_index/packages
+copying resource/breandon -> /home/brandon/ros2_ws/install/breandon/share/ament_index/resource_index/packages
+copying package.xml -> /home/brandon/ros2_ws/install/breandon/share/breandon
+running install_egg_info
+Copying ../../build/breandon/breandon.egg-info to /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/brandon/ros2_ws/build/breandon/install.log'

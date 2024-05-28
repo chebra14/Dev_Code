@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing breandon.egg-info/PKG-INFO
+writing dependency_links to breandon.egg-info/dependency_links.txt
+writing entry points to breandon.egg-info/entry_points.txt
+writing requirements to breandon.egg-info/requires.txt
+writing top-level names to breandon.egg-info/top_level.txt
+reading manifest file 'breandon.egg-info/SOURCES.txt'
+writing manifest file 'breandon.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon.egg-link (link to .)
+
+Installed /home/brandon/ros2_ws/build/breandon
+running install_data

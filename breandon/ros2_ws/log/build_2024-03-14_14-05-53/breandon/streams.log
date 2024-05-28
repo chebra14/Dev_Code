@@ -1,0 +1,20 @@
+[0.502s] Invoking command in '/home/brandon/ros2_ws/build/breandon': PYTHONPATH=/home/brandon/ros2_ws/build/breandon/prefix_override:/home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/brandon/ros2_ws/build/breandon/build --no-deps install_data
+[0.687s] running develop
+[0.687s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.687s]   warnings.warn(
+[0.688s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.688s]   warnings.warn(
+[0.812s] running egg_info
+[0.812s] writing breandon.egg-info/PKG-INFO
+[0.812s] writing dependency_links to breandon.egg-info/dependency_links.txt
+[0.812s] writing entry points to breandon.egg-info/entry_points.txt
+[0.812s] writing requirements to breandon.egg-info/requires.txt
+[0.812s] writing top-level names to breandon.egg-info/top_level.txt
+[0.813s] reading manifest file 'breandon.egg-info/SOURCES.txt'
+[0.814s] writing manifest file 'breandon.egg-info/SOURCES.txt'
+[0.815s] running build_ext
+[0.815s] Creating /home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages/breandon.egg-link (link to .)
+[0.815s] 
+[0.815s] Installed /home/brandon/ros2_ws/build/breandon
+[0.815s] running install_data
+[0.831s] Invoked command in '/home/brandon/ros2_ws/build/breandon' returned '0': PYTHONPATH=/home/brandon/ros2_ws/build/breandon/prefix_override:/home/brandon/ros2_ws/install/breandon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/brandon/ros2_ws/build/breandon/build --no-deps install_data

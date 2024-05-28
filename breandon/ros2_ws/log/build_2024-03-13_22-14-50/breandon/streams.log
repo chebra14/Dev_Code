@@ -1,0 +1,18 @@
+[35.699s] Invoking command in '/home/jetson/breandon/ros2_ws/build/breandon': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/breandon/ros2_ws/build/breandon/build --no-deps install_data
+[43.173s] running develop
+[45.099s] running egg_info
+[45.100s] writing breandon.egg-info/PKG-INFO
+[45.103s] writing dependency_links to breandon.egg-info/dependency_links.txt
+[45.129s] writing entry points to breandon.egg-info/entry_points.txt
+[45.136s] writing requirements to breandon.egg-info/requires.txt
+[45.136s] writing top-level names to breandon.egg-info/top_level.txt
+[45.424s] reading manifest file 'breandon.egg-info/SOURCES.txt'
+[45.428s] writing manifest file 'breandon.egg-info/SOURCES.txt'
+[45.829s] running build_ext
+[45.832s] Creating /home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages/breandon.egg-link (link to .)
+[45.855s] Installing Moving_forward script to /home/jetson/breandon/ros2_ws/install/breandon/lib/breandon
+[45.860s] Installing Opt_Moving_forward script to /home/jetson/breandon/ros2_ws/install/breandon/lib/breandon
+[45.861s] 
+[45.861s] Installed /home/jetson/breandon/ros2_ws/build/breandon
+[45.862s] running install_data
+[46.084s] Invoked command in '/home/jetson/breandon/ros2_ws/build/breandon' returned '0': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/breandon/ros2_ws/build/breandon/build --no-deps install_data

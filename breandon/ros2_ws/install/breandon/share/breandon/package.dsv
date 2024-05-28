@@ -1,0 +1,6 @@
+source;share/breandon/hook/pythonpath.ps1
+source;share/breandon/hook/pythonpath.dsv
+source;share/breandon/hook/pythonpath.sh
+source;share/breandon/hook/ament_prefix_path.ps1
+source;share/breandon/hook/ament_prefix_path.dsv
+source;share/breandon/hook/ament_prefix_path.sh

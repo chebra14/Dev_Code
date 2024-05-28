@@ -1,0 +1,133 @@
+[34.230s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[34.231s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa28419a0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa28419a0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa27ab250>)
+[35.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[35.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[35.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[35.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[35.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[35.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[35.766s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetson/breandon/ros2_ws'
+[35.766s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[35.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[35.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[35.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[35.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[35.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[35.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[35.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[35.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[35.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[35.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[35.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[35.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[35.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[35.829s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[35.830s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[35.830s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[35.831s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[35.831s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[35.831s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[35.832s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[35.832s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[35.832s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[35.833s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[35.833s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[35.833s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[35.834s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[35.834s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[35.834s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[35.834s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[35.834s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[35.834s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[35.835s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[35.835s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[35.835s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[35.835s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[35.836s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[35.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extensions ['ignore', 'ignore_ament_install']
+[35.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extension 'ignore'
+[35.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extension 'ignore_ament_install'
+[35.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extensions ['colcon_pkg']
+[35.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extension 'colcon_pkg'
+[35.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extensions ['colcon_meta']
+[35.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extension 'colcon_meta'
+[35.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extensions ['ros']
+[35.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/breandon) by extension 'ros'
+[35.849s] DEBUG:colcon.colcon_core.package_identification:Package 'src/breandon' with type 'ros.ament_python' and name 'breandon'
+[35.849s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[35.850s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[35.850s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[35.850s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[35.850s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[39.004s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[39.004s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[40.315s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jetson/brandon/ros2_ws/install
+[40.937s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jetson/breandon/ros2_ws/install
+[41.553s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jetson/Documents/Ros2PP/install
+[42.163s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 24 installed packages in /home/jetson/f1tenth_ws/install
+[42.816s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 326 installed packages in /home/jetson/ros2_foxy/install
+[43.485s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 365 installed packages in /opt/ros/foxy
+[43.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[45.361s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'cmake_args' from command line to 'None'
+[45.361s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'cmake_target' from command line to 'None'
+[45.362s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[45.362s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'cmake_clean_cache' from command line to 'False'
+[45.362s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'cmake_clean_first' from command line to 'False'
+[45.362s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'cmake_force_configure' from command line to 'False'
+[45.362s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'ament_cmake_args' from command line to 'None'
+[45.362s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'catkin_cmake_args' from command line to 'None'
+[45.363s] Level 5:colcon.colcon_core.verb:set package 'breandon' build argument 'catkin_skip_building_tests' from command line to 'False'
+[45.363s] DEBUG:colcon.colcon_core.verb:Building package 'breandon' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/breandon/ros2_ws/build/breandon', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/breandon/ros2_ws/install/breandon', 'merge_install': False, 'path': '/home/jetson/breandon/ros2_ws/src/breandon', 'symlink_install': False, 'test_result_base': None}
+[45.960s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[46.623s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[46.624s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/breandon/ros2_ws/src/breandon' with build type 'ament_python'
+[46.625s] Level 1:colcon.colcon_core.shell:create_environment_hook('breandon', 'ament_prefix_path')
+[47.358s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[47.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/hook/ament_prefix_path.ps1'
+[47.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/hook/ament_prefix_path.dsv'
+[47.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/hook/ament_prefix_path.sh'
+[48.074s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[48.074s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[55.907s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/breandon/ros2_ws/src/breandon'
+[56.546s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[56.547s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[66.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/breandon/ros2_ws/build/breandon': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/jetson/breandon/ros2_ws/build/breandon/build
+[70.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/breandon/ros2_ws/build/breandon' returned '0': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/jetson/breandon/ros2_ws/build/breandon/build
+[70.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/breandon/ros2_ws/src/breandon': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/breandon build --build-base /home/jetson/breandon/ros2_ws/build/breandon/build install --record /home/jetson/breandon/ros2_ws/build/breandon/install.log --single-version-externally-managed
+[74.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/breandon/ros2_ws/src/breandon' returned '0': PYTHONPATH=/home/jetson/breandon/ros2_ws/build/breandon/prefix_override:/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/breandon build --build-base /home/jetson/breandon/ros2_ws/build/breandon/build install --record /home/jetson/breandon/ros2_ws/build/breandon/install.log --single-version-externally-managed
+[75.543s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/breandon/ros2_ws/install/breandon' for CMake module files
+[75.545s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/breandon/ros2_ws/install/breandon' for CMake config files
+[75.687s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/breandon/ros2_ws/install/breandon/lib'
+[75.688s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/breandon/ros2_ws/install/breandon/bin'
+[75.689s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/breandon/ros2_ws/install/breandon/lib/pkgconfig/breandon.pc'
+[75.690s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/breandon/ros2_ws/install/breandon/lib/python3.8/site-packages'
+[75.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('breandon', 'pythonpath')
+[76.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/hook/pythonpath.ps1'
+[76.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/hook/pythonpath.dsv'
+[76.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/hook/pythonpath.sh'
+[76.313s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/breandon/ros2_ws/install/breandon/bin'
+[76.313s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(breandon)
+[76.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/package.ps1'
+[76.939s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/package.dsv'
+[76.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/package.sh'
+[76.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/package.bash'
+[76.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/breandon/ros2_ws/install/breandon/share/breandon/package.zsh'
+[76.953s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/breandon/ros2_ws/install/breandon/share/colcon-core/packages/breandon)
+[76.955s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[76.957s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[76.958s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[76.958s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[77.626s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[77.626s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[77.627s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[77.710s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[78.305s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/breandon/ros2_ws/install/local_setup.ps1'
+[78.309s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/breandon/ros2_ws/install/_local_setup_util_ps1.py'
+[78.323s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/breandon/ros2_ws/install/setup.ps1'
+[79.011s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/breandon/ros2_ws/install/local_setup.sh'
+[79.015s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/breandon/ros2_ws/install/_local_setup_util_sh.py'
+[79.017s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/breandon/ros2_ws/install/setup.sh'
+[79.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/breandon/ros2_ws/install/local_setup.bash'
+[79.819s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/breandon/ros2_ws/install/setup.bash'
+[80.520s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/breandon/ros2_ws/install/local_setup.zsh'
+[80.524s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/breandon/ros2_ws/install/setup.zsh'

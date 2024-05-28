@@ -1,0 +1,18 @@
+#Drive Mode
+#1 - Normal
+#2 - Straight
+#3 - Donut
+#4 - Autocorrect
+drive_Mode : 2
+
+#STRAIGHT RUN
+#Straight Variation in throttle
+#0 - Go
+#1 - Go and Stop
+#2 - Random
+#3 - Stop go in small increments
+#4 - Small increment increase in speed
+straight_Mode : 1
+
+#Maximum Speed for straight run
+setSpeed_raw : 4

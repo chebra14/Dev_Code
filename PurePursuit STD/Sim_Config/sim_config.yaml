@@ -1,0 +1,14 @@
+#Dynamic Model Mode
+#1 - Single Track Dynamics
+#2 - Single Track Drift Dynamics
+dynamic_mode : 2
+
+#Tire Choice
+#2 - 1/10 RC Tire
+#2 - BMW Tire
+tire_id : 1
+
+#Vehicle Choice
+#Vehicle 1 - F1Tenth
+#Vehicle 2 - BMW 320i
+vehicle_id : 1

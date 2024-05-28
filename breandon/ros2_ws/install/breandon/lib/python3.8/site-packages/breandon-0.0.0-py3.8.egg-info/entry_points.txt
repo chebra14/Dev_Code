@@ -1,0 +1,4 @@
+[console_scripts]
+Moving_forward = breandon.test_moving_forward:main
+Opt_Moving_forward = breandon.Opt_test_moving_forward:main
+
