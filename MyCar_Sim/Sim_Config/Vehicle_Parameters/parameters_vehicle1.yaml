@@ -64,7 +64,9 @@ Kv: 3500
 MaxRPM: 50000
 
 # Speed Controller Acceleration Kp value for PID
-Kp_Accl: 4.0
+Kp_Accl: 2.0
+# Kp_Accl: 10.0
 
 # Speed Controller Braking Kp value for PID
-Kp_Brake: 3.5
+Kp_Brake: 100.0
+# Kp_Brake: 2.0

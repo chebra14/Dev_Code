@@ -98,7 +98,10 @@ class RaceCar(object):
         # Test LPF
         self.vel_Step = 0
         self.v_gain = 0.85
-        self.tempMaxSpeed = 1.35
+        self.tempMaxSpeed = 1
+
+        self.accl_Step = 0
+        self.a_gain = 0.1
 
         # initialization
         self.params = params
@@ -456,6 +459,10 @@ class RaceCar(object):
                 
                 accl, sv = pid_STD(self.vel_Step, steer, avg_Wheelspeed*self.params_std.R_w, self.state[2], self.params_std)
 
+                self.accl_Step = self.accl_Step*self.a_gain + (1 - self.a_gain)*(accl)
+
+                accl = self.accl_Step
+
                 # RK4 integration
                 k1 = vehicle_dynamics_std(
                     self.state,
@@ -506,6 +513,7 @@ class RaceCar(object):
             self.state[4] = self.state[4] + 2*np.pi
 
         # INSERT Base class CSV add_row() here
+        # add_row([self.state[7]*self.params_std.R_w - self.state[3], self.state[8]*self.params_std.R_w - self.state[3]])
 
         # update scan
         current_scan = RaceCar.scan_simulator.scan(np.append(self.state[0:2], self.state[4]), self.scan_rng)

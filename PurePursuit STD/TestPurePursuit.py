@@ -18,7 +18,7 @@ UPDATE_PERIOD = 2
 
 def main():
     # map_name_list = ["gbr","esp","mco"]
-    map_name_list = ["gbr"]
+    map_name_list = ["mco"]
 
     '''Tuning'''
     # testmode_list = ["v_gain","lfd"]

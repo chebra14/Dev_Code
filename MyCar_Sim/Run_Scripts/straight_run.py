@@ -71,7 +71,7 @@ def straight_Test(straight_Mode, currentTime, speed, flagTime):
 
             case 1:
 
-                if(currentTime >= 5):
+                if(currentTime >= 2):
                     speed = 0
 
             case 2:
