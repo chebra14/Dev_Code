@@ -29,8 +29,8 @@ longitudinal:
 
 # masses
 # vehicle mass [kg]  MASS
-# m: 3.74
-m: 3
+m: 3.74
+# m: 3
 
 # axes distances
 # distance from spring mass center of gravity to front axle [m]  LENA
@@ -64,7 +64,7 @@ Kv: 3500
 MaxRPM: 50000
 
 # Speed Controller Acceleration Kp value for PID
-Kp_Accl: 2.0
+Kp_Accl: 3.0
 # Kp_Accl: 10.0
 
 # Speed Controller Braking Kp value for PID

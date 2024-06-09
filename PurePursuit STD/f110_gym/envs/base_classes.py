@@ -514,6 +514,7 @@ class RaceCar(object):
 
         # INSERT Base class CSV add_row() here
         add_row([self.state[7]*self.params_std.R_w - self.state[3], self.state[8]*self.params_std.R_w - self.state[3]])
+        # add_row([accl, self.state[7]*self.params_std.R_w, self.state[8]*self.params_std.R_w])
 
         # update scan
         current_scan = RaceCar.scan_simulator.scan(np.append(self.state[0:2], self.state[4]), self.scan_rng)

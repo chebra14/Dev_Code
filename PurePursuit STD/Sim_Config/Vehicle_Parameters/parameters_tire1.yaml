@@ -5,8 +5,8 @@
 tire:
   # longitudinal coefficients
   p_cx1: 1.6411
-  # p_dx1: 1.1739
-  p_dx1: 1
+  p_dx1: 1.1739
+  # p_dx1: 1
   p_dx3: 0
   p_ex1: 0.46403
   p_kx1: 22.303
@@ -20,8 +20,8 @@ tire:
 
 # lateral coefficients
   p_cy1: 1.3507
-  # p_dy1: 1.0489
-  p_dy1: 1
+  p_dy1: 1.0489
+  # p_dy1: 1
   p_dy3: -2.8821
   p_ey1: -0.0074722
   p_ky1: -21.92
