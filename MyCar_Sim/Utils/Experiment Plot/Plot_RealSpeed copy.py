@@ -18,7 +18,7 @@ def main():
     expected_speed = []
     t_s_2 = []
 
-    path_root_test = Path(__file__).parent  /'..'/'..'/ 'Results/Fourth_Straight_Test/Results_Odom.csv'
+    path_root_test = Path(__file__).parent  /'..'/'..'/ 'Results/Fourth_Straight_Test/Results_Odom_New.csv'
 
 
     with open(path_root_test ,'r') as csvfile: 
@@ -26,12 +26,12 @@ def main():
         
         for row in plots:
 
-            if float(row[2]) > 0.266208:
+            if float(row[2]):
                 wheel_speed.append(float(row[0]))
                 expected_speed.append(float(row[1]))
-                t_s_2.append(float(row[2]) - (0.266208 - 0.197775))
+                t_s_2.append(float(row[2]))
 
-    path_root_laser = Path(__file__).parent  /'..'/'..'/ 'Results/Fourth_Straight_Test/Results_Laser.csv'
+    path_root_laser = Path(__file__).parent  /'..'/'..'/ 'Results/Fourth_Straight_Test/Results_Laser_New.csv'
 
     with open(path_root_laser ,'r') as csvfile2: 
         plots2 = csv.reader(csvfile2, delimiter = ',') 
@@ -89,13 +89,12 @@ def main():
     vel = np.gradient(pose, t_s_1)
     #Hardcode Smoothening
     # np.savetxt(f"Results/Fourth_Straight_Test/Vel_19.csv", vel, delimiter = ',')
-    # x2_fit = 55
-    # x1_fit = 50
+    # x2_fit = 104
+    # x1_fit = 100
     # m = (vel[x2_fit] - vel[x1_fit]) / (x2_fit - x1_fit)
     # c = vel[x2_fit] - m*x2_fit
     # for i in range(x1_fit,x2_fit + 1):
     #     print(m*i + c)
-
     # m = (vel[14] - 0) / (14 - 0)
     # c = vel[14] - m*14
     # for i in range(0,15):
@@ -109,7 +108,7 @@ def main():
         for row in plots:
             new_vel_1.append(float(row[0]))
     new_vel_1 = np.array(new_vel_1)
-    # new_vel_1 = vel
+    new_vel_1 = vel
 
     # Smoothen the Velocity
     smoothened_vel = smoothen(new_vel_1)
@@ -142,33 +141,33 @@ def main():
     # result = np.concatenate((array1, array2, array3), axis=1)
     # np.savetxt(f"Results/Fourth_Straight_Test/Wheel_Slip.csv", result, delimiter = ',')
 
-    pose_int = cumtrapz(vel_interpolated, t_s_2)
+    # pose_int = cumtrapz(vel_interpolated, t_s_2)
 
-    plt.figure()
-    plt.plot(t_s_1, pose)
-    plt.plot(t_s_2[1::], pose_int)
-
-    plt.xlabel('Time (s)') 
-    plt.ylabel('Position (m)') 
-    plt.title('Velocity Fit Verification') 
-    plt.grid(visible=True)
-    plt.show()
-
-    plt.figure()
-    plt.plot(t_s_2, wheel_speed)
-    plt.plot(t_s_2, expected_speed)
-    plt.plot(t_s_2, vel_interpolated)
-    plt.plot(t_s_2, slip)
+    # plt.figure()
     # plt.plot(t_s_1, pose)
+    # plt.plot(t_s_2[1::], pose_int)
 
-    plt.xlabel('Time (s)') 
-    plt.ylabel('Speed (m/s)') 
-    plt.title('Straight Test - Result (Slippery - After Shift)') 
-    plt.legend(["Wheel Speed", "Expected Speed", "Actual Speed", "Slip"])#, "Actual Speed", "Position (m)"])
-    plt.xlim([0,6])
-    # plt.ylim([-3, 10]) 
-    plt.grid(visible=True)
-    plt.show()
+    # plt.xlabel('Time (s)') 
+    # plt.ylabel('Position (m)') 
+    # plt.title('Velocity Fit Verification') 
+    # plt.grid(visible=True)
+    # plt.show()
+
+    # plt.figure()
+    # plt.plot(t_s_2, wheel_speed)
+    # plt.plot(t_s_2, expected_speed)
+    # plt.plot(t_s_2, vel_interpolated)
+    # plt.plot(t_s_2, slip)
+    # # plt.plot(t_s_1, pose)
+
+    # plt.xlabel('Time (s)') 
+    # plt.ylabel('Speed (m/s)') 
+    # plt.title('Straight Test - Result (Slippery - After Shift)') 
+    # plt.legend(["Wheel Speed", "Expected Speed", "Actual Speed", "Slip"])#, "Actual Speed", "Position (m)"])
+    # plt.xlim([0,6])
+    # # plt.ylim([-3, 10]) 
+    # plt.grid(visible=True)
+    # plt.show()
 
 def smoothen(vel):
     #Step 1

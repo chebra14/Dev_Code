@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'straight_test_2'
+package_name = 'imu'
 
 setup(
     name=package_name,
@@ -20,8 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "Moving_forward = straight_test_2.test_moving_forward:main",
-            "Opt_Moving_forward = straight_test_2.Opt_test_moving_forward:main"
+            "Test_Imu = imu.Opt_test_imu:main"
         ],
     },
 )

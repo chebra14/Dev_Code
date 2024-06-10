@@ -8,7 +8,7 @@ from ackermann_msgs.msg import AckermannDriveStamped
 #Change this line (1) from gym
 from sensor_msgs.msg import Joy
 from sensor_msgs.msg import LaserScan
-# from sensor_msgs.msg import Imu
+from sensor_msgs.msg import Imu
 
 import time
 
@@ -23,7 +23,7 @@ class TESTNode(Node):
         self.drive_pub = self.create_publisher(AckermannDriveStamped, "/drive", 10)
         self.pose_subscriber = self.create_subscription(LaserScan, '/scan', self.callback_scan, 10)
         self.raw_car = self.create_subscription(Odometry, '/odom', self.callback_wheelspeed, 10)
-        # self.imu_car = self.create_subscription(Imu, '/vesc/sensors/imu', self.callback_IMU, 10)
+        self.imu_car = self.create_subscription(Imu, '/sensors/imu/raw', self.callback_IMU, 10)
         #Change this line (3) from gym
         self.joy_sub = self.create_subscription(Joy, "/joy", self.callbackJoy, 10)
         self.Joy7 = 0
@@ -57,9 +57,9 @@ class TESTNode(Node):
 
             if (current_time) > 10.0:
                 self.ds.savefile_odom()
-                # self.ds.savefile_IMU()
+                self.ds.savefile_IMU()
                 self.ds.savefile_las()
-                self.get_logger().info("Odom, pf saved")
+                self.get_logger().info("Odom, Imu and pf saved")
                 rclpy.shutdown()
 
         speed_publish = cmd.drive.speed
@@ -72,19 +72,16 @@ class TESTNode(Node):
         
         self.ds.saveStates(self.x0)
 
-    # def callback_IMU(self, msg:Imu):
-    #     self.get_logger().info("I'm In")
+    def callback_IMU(self, msg:Imu):
 
-    #     linear_x = msg.linear_acceleration.x
-    #     linear_y = msg.linear_acceleration.y
+        current_time = time.perf_counter() - self.start_time
 
-    #     self.get_logger().info("I'm Out")
+        linear_x = msg.linear_acceleration.x
+        linear_y = msg.linear_acceleration.y
 
-    #     self.get_logger().info(f'{linear_x}, {linear_y}')
+        self.get_logger().info(f'{linear_x}, {linear_y}')
 
-    #     current_time = time.perf_counter() - self.start_time
-
-    #     self.ds.saveIMU(linear_x, linear_y, current_time)
+        self.ds.saveIMU(linear_x, linear_y, current_time)
 
 
     def callback_scan(self, msg:LaserScan):
@@ -120,7 +117,8 @@ class TESTNode(Node):
             if (current_time) > 10.0:
                 self.ds.savefile_odom()
                 self.ds.savefile_las()
-                self.get_logger().info("Odom and Laser saved")
+                self.ds.savefile_IMU()
+                self.get_logger().info("Odom, IMU and Laser saved")
                 rclpy.shutdown()
 
         speed_publish = cmd.drive.speed

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>straight_test_2</name>
+  <name>imu</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="22807632@sun.ac.za">brandon</maintainer>
