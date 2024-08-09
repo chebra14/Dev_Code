@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import csv 
 from pathlib import Path
 import numpy as np
+from scipy.integrate import cumtrapz
+import math
 
 time_N = []
 accel_N_x = []
@@ -23,7 +25,7 @@ threshold = 0.6
 # r_ws_S = []
 # l_ws_S = []
 
-path_root_N = Path(__file__).parent  / 'Data/Slip/BV_S_Test4.csv'
+path_root_N = Path(__file__).parent  / 'Data/Slip/BV_S_Test3.csv'
   
 with open(path_root_N ,'r') as csvfile1: 
     plots1 = csv.reader(csvfile1, delimiter = ',') 
@@ -69,25 +71,30 @@ t_s_N = t_s_N - t_s_N[0]
 maxTime_N = round(t_s_N[len(t_s_N)-1])
 # maxTime_S = round(t_s_S[len(t_s_S)-1])
 
-temp_yaw_m = np.array(yaw_model_N)
-temp_yaw_r = np.array(gyro_N_z)
+yaw = cumtrapz(gyro_N_z, t_s_N)
+test = cumtrapz(yaw, t_s_N[1::])
 
-up_yaw = temp_yaw_m + 0.6
-low_yaw = temp_yaw_m - 0.6
+fig, (Accel, WS) = plt.subplots(2)
+Accel.plot(t_s_N[1::], yaw)
+# Accel.plot(t_s_N[1::], temp_y_int)
+Accel.set_xlabel('Time (s)') 
+Accel.set_ylabel('Speed (m/s)') 
+Accel.set_title('Speed') 
+Accel.legend(["XY"])
+Accel.set_xlim([0, maxTime_N])
+Accel.grid(visible=True)
 
-# for i in range(67):
+WS.plot(t_s_N, l_ws_N)
+WS.plot(t_s_N, r_ws_N)
+WS.set_xlabel('Time (s)') 
+WS.set_ylabel('Wheel Speed') 
+WS.set_title('Wheel Speed') 
+WS.legend(["Left", "Right"])
+WS.set_xlim([0, maxTime_N])
+WS.grid(visible=True)
 
-#     print(t_s_N[i], (abs(temp_yaw_m[i] - temp_yaw_r[i])))
-
-plt.plot(t_s_N, gyro_N_z)
-plt.plot(t_s_N, up_yaw)
-plt.plot(t_s_N, low_yaw)
-plt.xlabel('Time (s)') 
-plt.ylabel('Yaw rate (rad/s)') 
-plt.title('Baby Voyager YAW Test (Pushing the Car Around) - 0.5') 
-plt.legend(["Yaw Gyro", "Upper Limit", "Lower Limit"])
-plt.xlim([0, maxTime_N])
-plt.grid(visible=True) 
+plt.subplots_adjust(hspace=0.3)
+    
 
 # plt.plot(t_s_S, accel_S_x)
 # plt.plot(t_s_S, accel_S_y)

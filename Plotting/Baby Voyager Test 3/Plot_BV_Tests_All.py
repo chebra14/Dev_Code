@@ -23,7 +23,7 @@ threshold = 0.6
 # r_ws_S = []
 # l_ws_S = []
 
-path_root_N = Path(__file__).parent  / 'Data/Slip/BV_S_Test4.csv'
+path_root_N = Path(__file__).parent  / 'BV_T3.csv'
   
 with open(path_root_N ,'r') as csvfile1: 
     plots1 = csv.reader(csvfile1, delimiter = ',') 
@@ -79,15 +79,15 @@ low_yaw = temp_yaw_m - 0.6
 
 #     print(t_s_N[i], (abs(temp_yaw_m[i] - temp_yaw_r[i])))
 
-plt.plot(t_s_N, gyro_N_z)
-plt.plot(t_s_N, up_yaw)
-plt.plot(t_s_N, low_yaw)
-plt.xlabel('Time (s)') 
-plt.ylabel('Yaw rate (rad/s)') 
-plt.title('Baby Voyager YAW Test (Pushing the Car Around) - 0.5') 
-plt.legend(["Yaw Gyro", "Upper Limit", "Lower Limit"])
-plt.xlim([0, maxTime_N])
-plt.grid(visible=True) 
+# plt.plot(t_s_N, gyro_N_z)
+# plt.plot(t_s_N, up_yaw)
+# plt.plot(t_s_N, low_yaw)
+# plt.xlabel('Time (s)') 
+# plt.ylabel('Yaw rate (rad/s)') 
+# plt.title('Baby Voyager YAW Test (Pushing the Car Around) - 0.5') 
+# plt.legend(["Yaw Gyro", "Upper Limit", "Lower Limit"])
+# plt.xlim([0, maxTime_N])
+# plt.grid(visible=True) 
 
 # plt.plot(t_s_S, accel_S_x)
 # plt.plot(t_s_S, accel_S_y)
@@ -99,26 +99,27 @@ plt.grid(visible=True)
 # plt.set_xlim([0, maxTime_S])
 # plt.grid(visible=True) 
 
-plt.show()
-
-# fig2, (NSlip_gyro, w_speed) = plt.subplots(2)
-
-# NSlip_gyro.plot(t_s_N, yaw_model_N)
-# NSlip_gyro.plot(t_s_N, gyro_N_z)
-# NSlip_gyro.set_xlabel('Time (s)') 
-# NSlip_gyro.set_ylabel('Yaw (raw/s)') 
-# NSlip_gyro.set_title('Baby Voyager YAW Test (Model vs Real)') 
-# NSlip_gyro.legend(["Yaw Model", "Yaw Gyro"])
-# NSlip_gyro.set_xlim([0, maxTime_N])
-# NSlip_gyro.grid(visible=True) 
-
-# w_speed.plot(t_s_N, l_ws_N)
-# w_speed.plot(t_s_N, r_ws_N)
-# w_speed.set_xlabel('Time (s)') 
-# w_speed.set_ylabel('Pulse per 250ms') 
-# w_speed.set_title('Baby Voyager YAW Test (Wheel Speed)') 
-# w_speed.legend(["Left Wheel", "Right Wheel"])
-# w_speed.set_xlim([0, maxTime_N])
-# w_speed.grid(visible=True) 
-
 # plt.show()
+
+fig2, (NSlip_gyro, w_speed) = plt.subplots(2)
+
+NSlip_gyro.plot(t_s_N, gyro_N_z)
+NSlip_gyro.plot(t_s_N, up_yaw)
+NSlip_gyro.plot(t_s_N, low_yaw)
+NSlip_gyro.set_xlabel('Time (s)') 
+NSlip_gyro.set_ylabel('Yaw (raw/s)') 
+NSlip_gyro.set_title('Baby Voyager YAW Test (Model vs Real)') 
+NSlip_gyro.legend(["Yaw Model", "Yaw Gyro"])
+NSlip_gyro.set_xlim([0, maxTime_N])
+NSlip_gyro.grid(visible=True) 
+
+w_speed.plot(t_s_N, l_ws_N)
+w_speed.plot(t_s_N, r_ws_N)
+w_speed.set_xlabel('Time (s)') 
+w_speed.set_ylabel('Pulse per 250ms') 
+w_speed.set_title('Baby Voyager YAW Test (Wheel Speed)') 
+w_speed.legend(["Left Wheel", "Right Wheel"])
+w_speed.set_xlim([0, maxTime_N])
+w_speed.grid(visible=True) 
+
+plt.show()
